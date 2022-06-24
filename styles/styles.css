@@ -3,24 +3,32 @@
 body { 
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 
+.header-img{
+  background-color:rgb(55, 55, 95);
+  background-image: url("./images/dog.png");
+  height: 250px;
+}
 .navbar {
   overflow: hidden;
   background-color: #201c24;
-  padding: 20px 10px;
+  /* padding: 20px 10px; */
 }
 
 .navbar a {
   float: left;
   color: rgb(255, 255, 255);
   text-align: center;
-  padding: 12px;
+  padding: 16px;
   text-decoration: none;
   font-size: 18px; 
   line-height: 25px;
   border-radius: 4px;
+  text-transform: uppercase;
+  border-bottom: 5px solid transparent;
+  padding-bottom: 11px;
+
 }
 
 .navbar a.logo {
@@ -29,8 +37,10 @@ body {
 }
 
 .navbar a:hover {
-  background-color: lightblue;
+  background-color: rgb(255, 255, 255);
+  text-decoration: underline;
   color: black;
+  border-bottom: 5px solid #fccc04
 }
 
 .navbar a.active {
