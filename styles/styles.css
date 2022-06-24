@@ -1,1 +1,55 @@
-/* CSS Styles */
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #201c24;
+  padding: 20px 10px;
+}
+
+.navbar a {
+  float: left;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.navbar a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: lightblue;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.navbar-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .navbar-right {
+    float: none;
+  }
+}
