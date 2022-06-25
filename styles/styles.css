@@ -46,7 +46,6 @@
 }
 
 .navbar a:hover {
-  text-decoration: underline;
   color: rgb(255, 255, 255);
   border-bottom: 5px solid #fccc04
 }
