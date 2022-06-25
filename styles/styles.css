@@ -36,7 +36,6 @@
   text-decoration: none;
   font-size: 18px; 
   line-height: 25px;
-  /* border-radius: 4px; */
   text-transform: uppercase;
   border-bottom: 5px solid transparent;
   padding-bottom: 10px;
@@ -71,19 +70,32 @@ body {
   animation: change 20s ease-in-out infinite;
 }
 
+.container{
+  padding: 25px 100px 0px 100px; /* top left bottom right */ 
+  position: relative;
+}
 .title {
   font-size: 22px;
   border-bottom: 5px solid #fccc04;
   display:inline-block;
   line-height: 2px;
-  padding-top: 75px;
-  margin-left: 50px;
-  
+  padding-top: 10px;
 }
-.intro-video{
-  text-align: left;
-  padding: 50px 50px;
+.intro-video {
+  padding-top: 25px;
 }
+
+.question-one {
+  text-align:left;
+}
+p {
+  text-align: justify;
+  font-size: 18px;
+  color:rgb(197, 196, 196)
+}
+
+
+
 
 
 
@@ -98,6 +110,9 @@ body {
     background-position: 0% 50%;
   }
 }
+
+
+
 
 
 @media screen and (max-width: 500px) {
