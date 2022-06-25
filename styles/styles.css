@@ -1,4 +1,7 @@
-* {box-sizing: border-box;}
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .header-img{
   background-color:rgb(55, 55, 95);
@@ -75,13 +78,6 @@ body {
   line-height: 2px;
   padding-top: 75px;
 
-}
-
-
-
-.footer {
-  padding: 50px 50px;
-  margin: 0;
 }
 
 
