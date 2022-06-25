@@ -2,8 +2,8 @@
 
 .header-img{
   background-color:rgb(55, 55, 95);
-  background-image: url("/theScoreStories/images/stadium.jpg");
-  height: 750px;
+  background-image: url("/images/stadium.jpg");
+  height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -59,15 +59,28 @@
   float: right;
 }
 
-
 body { 
-  margin: 0;
+  margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   background: linear-gradient(45deg, #041f40, #062a56, #07346a, #0a4f9f, #0a4fa0);
 	background-size: 400%, 400%;
   animation: change 20s ease-in-out infinite;
 }
+
+.title {
+  font-size: 22px;
+  border-bottom: 5px solid #fccc04;
+  display:inline-block;
+  line-height: 2px;
+  padding-top: 75px;
+
+}
+
+
+
+
+
 
 @keyframes change {
   0%{
