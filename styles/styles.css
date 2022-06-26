@@ -18,6 +18,11 @@
   color:#fff;
   position:relative;
 }
+.underlined{
+  text-decoration: underline;
+  text-decoration-color: #fccc04;
+  text-decoration-thickness: 5px;
+}
 
 nav {
   display: flex;
