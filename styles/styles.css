@@ -13,12 +13,17 @@
   position: relative;
 }
 
+
 .main-title{
   font-size: 48px;
   color:#fff;
   position:relative;
 }
 
+.underlined{
+  text-decoration: underline;
+  text-decoration-color:#fccc04;
+}
 nav {
   display: flex;
   padding: 2% 6%;
