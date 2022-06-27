@@ -1,43 +1,45 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(21, 30, 65, 0.7), rgba(21,30,36,0.7)), url(/images/stadium.jpg);
+  background-image: linear-gradient(
+      rgba(21, 30, 65, 0.7),
+      rgba(21, 30, 36, 0.7)
+    ),
+    url(/images/stadium.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
 }
 
-
-.main-title{
+.main-title {
   font-size: 48px;
-  color:#fff;
-  position:relative;
+  color: #fff;
+  position: relative;
 }
 
-.underlined{
+.underlined {
   text-decoration: underline;
-  text-decoration-color:#fccc04;
+  text-decoration-color: #fccc04;
 }
 nav {
   display: flex;
   padding: 2% 6%;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
 }
 nav img {
   width: 150px;
 }
 
-.nav-links{
+.nav-links {
   flex: 1;
   text-align: right;
-
 }
 .nav-links ul li {
   list-style: none;
@@ -50,18 +52,17 @@ nav img {
   text-decoration: none;
   font-size: 18px;
 }
-.nav-links ul li::after{
-  content: '';
+.nav-links ul li::after {
+  content: "";
   width: 0%;
   height: 2px;
   background: #fccc04;
   display: block;
   margin: auto;
   transition: 0.5s;
-
 }
 
-.nav-links ul li:hover::after{
+.nav-links ul li:hover::after {
   width: 100%;
 }
 
@@ -69,20 +70,20 @@ nav img {
   font-size: 45px;
   width: 90%;
   color: #fccc04;
-  position:absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align:center;
+  text-align: center;
 }
-.auto-type{
-  color:#fff;
+.auto-type {
+  color: #fff;
 }
 
-.hero-btn{
+.hero-btn {
   display: inline-block;
-  text-decoration:none;
-  color:#fff;
+  text-decoration: none;
+  color: #fff;
   border: 2px solid #fff;
   font-size: 18px;
   padding: 12px 34px;
@@ -91,61 +92,106 @@ nav img {
   cursor: pointer;
   border-radius: 48px;
 }
-.hero-btn:hover{
+.hero-btn:hover {
   border: 1px solid #086cfc;
   background: #086cfc;
   transition: 1s;
 }
 
-nav .fa{
+nav .fa {
   display: none;
 }
 
-
-@media(max-width: 700px) {
-  .textbox h1{
-      font-size: 20px;
+@media (max-width: 700px) {
+  .textbox h1 {
+    font-size: 20px;
   }
-  .nav-links ul li{
-      display: block;
+  .nav-links ul li {
+    display: block;
   }
-  .nav-links{
-      position: absolute;
-      background: #fccc04;
-      height: 100vh;
-      width: 200px;
-      top: 0;
-      right: 0;
-      text-align: left;
-      z-index: 2;
+  .nav-links {
+    position: absolute;
+    background: #fccc04;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
   }
-  nav .fa{
-      display:Block;
-      color: #fff;
-      margin: 10px;
-      font-size: 22px;
-      cursor:pointer;
+  nav .fa {
+    display: Block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
   }
-  .nav-links ul{
-      padding: 30px;
+  .nav-links ul {
+    padding: 30px;
   }
-
+  .what-row {
+    flex-direction: column;
+  }
 }
 
 .content {
   animation: change 20s ease-in-out infinite;
-  background: linear-gradient(45deg, #041f40, #062a56, #07346a, #0a4f9f, #0a4fa0);
-
+  background: linear-gradient(
+    45deg,
+    #041f40,
+    #062a56,
+    #07346a,
+    #0a4f9f,
+    #0a4fa0
+  );
 }
 
 @keyframes change {
-  0%{
+  0% {
     background-position: 0% 50%;
   }
-  50%{
+  50% {
     background-position: 100% 50%;
   }
-  100%{
+  100% {
     background-position: 0% 50%;
   }
+}
+
+/*----- What's the score  -----*/
+.what {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.what-title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.what-row {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.what-column {
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 20px;
+  margin-bottom: 2%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+
+.what-subtitle {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.what-column:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
