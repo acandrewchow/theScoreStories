@@ -159,8 +159,20 @@ nav .fa {
 }
 
 /*----- What's the score  -----*/
+
+.container-what {
+  animation: change 20s ease-in-out infinite;
+  background: linear-gradient(
+    45deg,
+    #041f40,
+    #062a56,
+    #07346a,
+    #0a4f9f,
+    #0a4fa0
+  );
+}
 .what {
-  width: 80%;
+  width:80%;
   margin: auto;
   text-align: center;
   padding-top: 20px;
@@ -169,6 +181,10 @@ nav .fa {
 .what-title {
   font-size: 36px;
   font-weight: 600;
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #fccc04;
+  text-decoration-thickness: 4px;
 }
 
 .what-row {
