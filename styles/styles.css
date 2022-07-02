@@ -17,7 +17,7 @@
   position: relative;
 }
 
-.header-culture{
+.about-culture{
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(
@@ -30,7 +30,7 @@
   position: relative;
 }
 
-.culture-title {
+.about-title {
   font-size: 48px;
   color: #fff;
   position: relative;
@@ -95,6 +95,21 @@ nav img {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+.text-box-about > h1{
+  font-size: 64px;
+  width: 90%;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-bottom: 4px solid #fccc04;
+  width: fit-content;
+  margin: 0 auto;
+}
+
 .auto-type {
   color: #fff;
 }
@@ -201,10 +216,11 @@ nav .fa {
   font-size: 36px;
   font-weight: 600;
   color: #fff;
-  text-decoration: underline;
-  text-decoration-color: #fccc04;
-  text-decoration-thickness: 4px;
+  border-bottom: 4px solid #fccc04;
+  width: fit-content;
+  margin: 0 auto;
 }
+
 
 .what-row {
   margin-top: 2%;
