@@ -1,0 +1,19 @@
+{
+    "stories":[
+        {
+            "picture":"#",
+            "name":"Test Name",
+            "story":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nulla nisi, vehicula a consectetur ac, ullamcorper non nibh. Nam at ultrices lacus. Aenean maximus mattis posuere. Vivamus venenatis, risus luctus dictum vestibulum, lectus massa ornare elit, ut maximus purus nunc a metus. Vestibulum in nunc non tortor accumsan facilisis nec eget sapien. Suspendisse eget tristique eros, aliquam sollicitudin sem. Nam rhoncus, elit quis rhoncus gravida, ligula sem viverra dui, at volutpat enim odio vel est. Cras porttitor nulla ut turpis molestie, quis tristique ante aliquam."
+        },
+        {
+            "picture":"#",
+            "name":"Test Name 2",
+            "story":"Test text 2"
+        },
+        {
+            "picture":"#",
+            "name":"Test Name 3",
+            "story":"Test text 3"
+        }
+    ]
+}

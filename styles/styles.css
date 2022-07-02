@@ -230,3 +230,47 @@ nav .fa {
 .what-column:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
+
+.card{
+  /*background: #201c24;*/
+  width:80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.card-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-container{
+  flex-basis: 31%;
+  max-width: 70%;
+  min-width: 500px;
+  background: #fff3f3;
+  border-radius: 20px;
+  margin-bottom: 2%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+#left{
+  transform: translatex(40%) scale(0.8);
+  opacity: 50%;
+  z-index: 0;
+}
+
+#right{
+  transform: translatex(-40%) scale(0.8);
+  opacity: 50%;
+  z-index: 0;
+}
+
+.card-image{
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  border: solid 5px #0a4f9f;
+}
