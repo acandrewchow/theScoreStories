@@ -12,7 +12,7 @@
       rgba(21, 30, 65, 0.7),
       rgba(21, 30, 36, 0.7)
     ),
-    url(/images/stadium.jpg);
+    url(/images/header_pics/stadium.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -25,7 +25,7 @@
       rgba(21, 30, 65, 0.7),
       rgba(21, 30, 36, 0.7)
     ),
-    url(/images/theScore_office_1.jpg);
+    url(/images/office_pics/theScore_office_1.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -44,7 +44,7 @@
       rgba(21, 30, 65, 0.7),
       rgba(21, 30, 36, 0.7)
     ),
-    url(/images/office_19.jpg);
+    url(/images/header_pics/watching_game.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -324,7 +324,6 @@ nav .fa {
 .image-gallery > li {
   flex: 1 1 auto;
   height: 300px;
-  cursor: pointer;
   position: relative;
 }
 
