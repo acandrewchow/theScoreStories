@@ -64,15 +64,12 @@ input[type=radio] {
   justify-content: center;
   font-family: 'DM Sans', sans-serif;
 }
-.colour{
-  /*background: linear-gradient(
-    45deg,
-    #041f40,
-    #062a56,
-    #07346a,
-    #0a4f9f,
-    #0a4fa0
-  );*/
+.card-text{
+  padding: 5%
+}
+.card-container{
+  height: 100%;
+  background: #fff;
   box-shadow:
   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
   0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -83,4 +80,26 @@ input[type=radio] {
   ;
   height: 100%;
   border-radius: 10px;
+}
+.card-color{
+  background: linear-gradient(
+    45deg,
+    #041f40,
+    #062a56,
+    #07346a,
+    #0a4f9f,
+    #0a4fa0
+  );
+  height: 30%;
+  padding-top: 7%;
+  border-radius: 10px 10px 0 0;
+}
+.card-image{
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  border: solid 5px #fccc04;
+  display: block;
+  margin: auto;
+  
 }
