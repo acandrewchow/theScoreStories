@@ -37,6 +37,38 @@
   position: relative;
 }
 
+.gallery-header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(21, 30, 65, 0.7),
+      rgba(21, 30, 36, 0.7)
+    ),
+    url(/images/stadium.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.text-box-gallery > h1{
+  font-size: 64px;
+  width: 90%;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-bottom: 4px solid #fccc04;
+  width: fit-content;
+  margin: 0 auto;
+}
+.gallery-title{
+  font-size: 48px;
+  color: #fff;
+  position: relative;
+}
+
 .main-title {
   font-size: 48px;
   color: #fff;
@@ -261,8 +293,61 @@ nav .fa {
   margin: auto;
 }
 
+/* Image Gallery */
+.gallery-container{
+  padding: 40px 5%;
+  animation: change 20s ease-in-out infinite;
+  background: linear-gradient(
+    45deg,
+    #041f40,
+    #062a56,
+    #07346a,
+    #0a4f9f,
+    #0a4fa0
+  );
+  
+}
+.heading-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  border-bottom: 4px solid #fccc04;
+  width: fit-content;
+  margin: 0 auto;
+
+}
+.image-gallery{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.image-gallery > li {
+  flex: 1 1 auto;
+  height: 300px;
+  cursor: pointer;
+  position: relative;
+}
+
+.image-gallery li img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+.image-gallery > li {
+  flex-grow: 1;
+}
+
+.image-gallery::after{
+  content:"";
+  flex-grow:999;
+}
+
 ul {
   list-style: none;
+  padding-top: 25px;
 }
 .row {
   display: flex;
