@@ -18,7 +18,7 @@
   position: relative;
 }
 
-.about-culture{
+.about-culture {
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(
@@ -97,7 +97,7 @@ nav img {
   text-align: center;
 }
 
-.text-box-about > h1{
+.text-box-about > h1 {
   font-size: 64px;
   width: 90%;
   color: #ffffff;
@@ -154,7 +154,6 @@ nav .fa {
     text-align: left;
     z-index: 2;
     width: fit-content;
-   
   }
   nav .fa {
     display: Block;
@@ -209,12 +208,13 @@ nav .fa {
   );
 }
 .what {
-  width:80%;
+  width: 80%;
   margin: auto;
   text-align: center;
   padding-top: 20px;
 }
 
+/*----- Not needed
 .what-title {
   font-size: 36px;
   font-weight: 600;
@@ -223,7 +223,7 @@ nav .fa {
   width: fit-content;
   margin: 0 auto;
 }
-
+-----*/
 
 .what-row {
   margin-top: 2%;
@@ -241,6 +241,8 @@ nav .fa {
 }
 
 .what-subtitle {
+  font-size: 36px;
+  font-weight: 600;
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
@@ -250,22 +252,20 @@ nav .fa {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-
-
 .footer {
   background-color: #24262b;
   padding: 70px 0;
 }
 .container {
-  max-width:1170px;
-  margin:auto;
+  max-width: 1170px;
+  margin: auto;
 }
 
 ul {
   list-style: none;
 }
 .row {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
 }
 .footer-col {
@@ -278,9 +278,8 @@ ul {
   margin-bottom: 30px;
   font-weight: 500;
   position: relative;
- 
 }
-.footer-col h4::before{
+.footer-col h4::before {
   content: "";
   position: absolute;
   left: 0;
@@ -288,33 +287,32 @@ ul {
   background-color: #fccc04;
   height: 2px;
   width: 50px;
-
 }
 
 .footer-col ul li:not(last-child) {
   margin-bottom: 10px;
 }
 
-.footer-col ul li a{
+.footer-col ul li a {
   font-size: 16px;
 
   color: #ffffff;
   text-decoration: none;
   font-weight: 300;
-  color:#bbbbbb;
-  display:block;
+  color: #bbbbbb;
+  display: block;
   transition: all 0.3s ease;
 }
 
-.footer-col ul li a:hover{
+.footer-col ul li a:hover {
   color: #ffffff;
   padding-left: 8px;
 }
-.footer-col .social-links a{
+.footer-col .social-links a {
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-color:(255, 255, 255, 0.02);
+  background-color: (255, 255, 255, 0.02);
   margin-right: 10px;
   margin: 0 10px 10px 0;
   text-align: center;
@@ -323,26 +321,26 @@ ul {
   color: #ffffff;
   transition: all 0.5s ease;
 }
-.footer-col .social-links a:hover{
+.footer-col .social-links a:hover {
   color: #24262b;
   background-color: #ffffff;
 }
 
-.copyright{
-  text-align:center;
+.copyright {
+  text-align: center;
   padding-top: 60px;
   color: #ffffff;
   font-weight: 300;
 }
 
-@media(max-width:750px){ 
+@media (max-width: 750px) {
   .footer-col {
     width: 25%;
     margin-bottom: 30px;
   }
 }
 
-@media(max-width:574px){ 
+@media (max-width: 574px) {
   .footer-col {
     width: 25%;
     margin-bottom: 30px;
