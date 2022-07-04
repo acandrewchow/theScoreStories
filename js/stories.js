@@ -1,11 +1,12 @@
 var json
-var left = 0
-var right = 2
+currentNum = 0
 fetch('js/stories.json')
     .then(response => response.json())
     .then(data => {
         console.log(data)
-        json = data
+        json = data.stories
+        updateProfile(currentNum)
+        /*
         const stories = document.createElement("div")
         stories.className="card"
         const storiesRow = document.createElement("div")
@@ -36,6 +37,27 @@ fetch('js/stories.json')
         }
 
         stories.appendChild(storiesRow)
-        document.body.appendChild(stories)
+        document.body.appendChild(stories)*/
     })
     .catch(error => console.log(error));
+
+document.getElementById("left").addEventListener("click", leftClick)
+document.getElementById("right").addEventListener("click", rightClick)
+function leftClick(){
+    if(currentNum > 0){currentNum-=1}
+    updateProfile(currentNum)
+}
+function rightClick(){
+    if(currentNum < json.length -1){currentNum+=1}
+    updateProfile(currentNum)
+}
+function updateProfile(storyNum){
+    const image = document.getElementById("profile-image")
+    image.src = (json[storyNum].picture === null)? "#" : json[storyNum].picture
+    const title = document.getElementById("profile-title")
+    title.innerText = (json[storyNum].title === null)? "" : json[storyNum].title
+    const name = document.getElementById("profile-name")
+    name.innerText = (json[storyNum].name === null)? "" : json[storyNum].name
+    const text = document.getElementById("profile-story")
+    text.innerText = (json[storyNum].story === null)? "": json[storyNum].story
+}
