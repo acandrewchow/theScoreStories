@@ -69,7 +69,7 @@ input[type=radio] {
 }
 .story{
   display: flex;
-  height: 800px;
+  height: 900px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -100,13 +100,14 @@ input[type=radio] {
     #0a4f9f,
     #0a4fa0
   );
-  height: 35%;
+  height: 30%;
   padding-top: 7%;
   border-radius: 10px 10px 0 0;
 }
 .card-image{
-  height: 140px;
-  width: 140px;
+  /* original was 180px each */
+  height: 235px;
+  width: 175px;
   border-radius: 50%;
   border: solid 5px #fccc04;
   display: block;
