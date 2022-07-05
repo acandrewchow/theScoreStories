@@ -20,11 +20,11 @@
 <body>
     <section class="about-stories">
         <nav aria-labelledby="home-navigation">
-            <span class="about-title">
+            <span class="stories-title">
                 <h3><i>the<span class="underlined">S</span>core Stories</h3></i>
             </span>
-            <div class="nav-links">
-                <i class="fa fa-times"></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -32,168 +32,171 @@
                     <li><a href="gallery.html">GALLERY</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
+        <div class = "text-box-stories">
+        <h1><a href="#what" style="text-decoration: none; color: inherit;">Our Story</a></h1>
+    </div>
     </section>
+        <div class="story">
+            <div class="container">
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+                <div class="cards">
+                    <label class="card" for="item-1" id="story-1">
 
-    <div class="story">
-        <div class="container">
-            <input type="radio" name="slider" id="item-1" checked>
-            <input type="radio" name="slider" id="item-2">
-            <input type="radio" name="slider" id="item-3">
-            <div class="cards">
-                <label class="card" for="item-1" id="story-1">
+                        <div class="card-container">
+                            <div class="card-color">
+                                <img src="/images/house.png" alt="Picture1" class="card-image">
+                            </div>
+                            <div class="card-text">
+                                <div class="card-name">Franky Jiang</div>
+                                <div class="card-name">Android developer, Co-op</div>
+                                <p class="card-story">
+                                    <h5 class="question"> Why did you join the Score?</h5>
+                                    I discovered theScore esports on Youtube a few years ago and I
+                                    really enjoyed the content that they created. After doing some research and trying to find
+                                    myself a summer position I found a posting for an Android developer position at
+                                    theScore. I had already been working with Android at my previous position so I
+                                    thought it would be a great opportunity to gain more android experience. While the position
+                                    was for theScore media app I still accepted the position as I wanted to work for a
+                                    company that created a product that I cared about. Additionally, it would allow me to
+                                    explore their other outlets of content, particularly the media app. The Android team I was a
+                                    part of provided me with lots of help and encouragement, enabling me to grow as a
+                                    developer.
+                                </p>
+                            </div>
+                        </div>
 
-                    <div class="card-container">
-                        <div class="card-color">
-                            <img src="/images/house.png" alt="Picture1" class="card-image">
+                    </label>
+                    <label class="card" for="item-2" id="story-2">
+                        <div class="card-container">
+                            <div class="card-color">
+                                <img src="/images/story_pics/IMG-3445.JPG" alt="Picture2" class="card-image">
+                            </div>
+                            <div class="card-text">
+                                <div class="card-name">Andrew Chow</div>
+                                <div class="card-job">QA Analyst, Co-op</div>
+                                <p class="card-story">
+                                    <h5 class="question"> Why did you join the Score?</h5>
+                                    As an avid Leafs fan, I have been using theScore media app for the
+                                    last 7 years. One day I came across an open position for a QA Analyst that was
+                                    currently hiring for the summer term. I thought that this was a great opportunity
+                                    for me to expand my knowledge in software development, while combining my passion
+                                    for both sports and technology. Being on the front end to deliver new features to
+                                    fans has always been a dream of mine, especially being a part of a company that
+                                    provides their fans with the best experience possible. In addition, working
+                                    alongside the promotions team has provided me with many resources, allowing me to
+                                    grow as an individual. At theScore, everyday is a new story as I get the chance to
+                                    solve new challenges, while getting the chance to communicate with other employees
+                                    among different teams.
+                                </p>
+                            </div>
                         </div>
-                        <div class="card-text">
-                            <div class="card-name">Franky Jiang</div>
-                            <div class="card-name">Android developer, Co-op</div>
-                            <p class="card-story">
-                                <h5 class="question"> Why did you join the Score?</h5>
-                                I discovered theScore esports on Youtube a few years ago and I
-                                really enjoyed the content that they created. After doing some research and trying to find
-                                myself a summer position I found a posting for an Android developer position at
-                                theScore. I had already been working with Android at my previous position so I
-                                thought it would be a great opportunity to gain more android experience. While the position
-                                was for theScore media app I still accepted the position as I wanted to work for a
-                                company that created a product that I cared about. Additionally, it would allow me to
-                                explore their other outlets of content, particularly the media app. The Android team I was a
-                                part of provided me with lots of help and encouragement, enabling me to grow as a
-                                developer.
-                            </p>
+                    </label>
+                    <label class="card" for="item-3" id="story-3">
+                        <div class="card-container">
+                            <div class="card-color">
+                                <img src="/images/house.png" alt="Picture3" class="card-image">
+                            </div>
+                            <div class="card-text">
+                                <div class="card-name">Christian</div>
+                                <div class="card-name">QA Analyst, Co-op</div>
+                                <p class="card-story">
+                                    <h5 class="question"> Why did you join the Score?</h5>
+                                    This is my first job, so before I got here I was looking to get
+                                    into a company I had some knowledge about and get to learn more about the tech industry as
+                                    well as develop my skills. I learned about theScore from their eSport media outlet in youtube, I was an
+                                    enthusiast about their stories and seeing the opportunity to work there, excited me. Of course,
+                                    the job post clearly stated that I would be working for theScore sports section but it
+                                    regardless encouraged me to apply as I foresaw a great atmosphere to work in which
+                                    come out to be as expected. Furthermore, being a QA Analyst at the theScore was like the
+                                    perfect opportunity since I get to have conversations with many different teams and
+                                    people which expand my scope of understanding of the industry. Additionally, my
+                                    strong suits are problem solving and analysis skills which are a perfect match for any QA
+                                    work related.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-
-                </label>
-                <label class="card" for="item-2" id="story-2">
-                    <div class="card-container">
-                        <div class="card-color">
-                            <img src="/images/story_pics/IMG-3445.JPG" alt="Picture2" class="card-image">
-                        </div>
-                        <div class="card-text">
-                            <div class="card-name">Andrew Chow</div>
-                            <div class="card-job">QA Analyst, Co-op</div>
-                            <p class="card-story">
-                                <h5 class="question"> Why did you join the Score?</h5>
-                                As an avid Leafs fan, I have been using theScore media app for the
-                                last 7 years. One day I came across an open position for a QA Analyst that was
-                                currently hiring for the summer term. I thought that this was a great opportunity
-                                for me to expand my knowledge in software development, while combining my passion
-                                for both sports and technology. Being on the front end to deliver new features to
-                                fans has always been a dream of mine, especially being a part of a company that
-                                provides their fans with the best experience possible. In addition, working
-                                alongside the promotions team has provided me with many resources, allowing me to
-                                grow as an individual. At theScore, everyday is a new story as I get the chance to
-                                solve new challenges, while getting the chance to communicate with other employees
-                                among different teams.
-                            </p>
-                        </div>
-                    </div>
-                </label>
-                <label class="card" for="item-3" id="story-3">
-                    <div class="card-container">
-                        <div class="card-color">
-                            <img src="/images/house.png" alt="Picture3" class="card-image">
-                        </div>
-                        <div class="card-text">
-                            <div class="card-name">Christian</div>
-                            <div class="card-name">QA Analyst, Co-op</div>
-                            <p class="card-story">
-                                <h5 class="question"> Why did you join the Score?</h5>
-                                This is my first job, so before I got here I was looking to get
-                                into a company I had some knowledge about and get to learn more about the tech industry as
-                                well as develop my skills. I learned about theScore from their eSport media outlet in youtube, I was an
-                                enthusiast about their stories and seeing the opportunity to work there, excited me. Of course,
-                                the job post clearly stated that I would be working for theScore sports section but it
-                                regardless encouraged me to apply as I foresaw a great atmosphere to work in which
-                                come out to be as expected. Furthermore, being a QA Analyst at the theScore was like the
-                                perfect opportunity since I get to have conversations with many different teams and
-                                people which expand my scope of understanding of the industry. Additionally, my
-                                strong suits are problem solving and analysis skills which are a perfect match for any QA
-                                work related.
-                            </p>
-                        </div>
-                    </div>
-                </label>
+                    </label>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="carousel">
-        <div class="triangle-left" id="left"></div>
-        <div class="profiles">
-            <div class="profile-box">
-                <div class="image">
-                    <img src="#" alt="Javascript error" id="profile-image" class="card-image">
+        <div class="carousel">
+            <div class="triangle-left" id="left"></div>
+            <div class="profiles">
+                <div class="profile-box">
+                    <div class="image">
+                        <img src="#" alt="Javascript error" id="profile-image" class="card-image">
+                    </div>
+                    <div class="profile-text" id="profile-title"></div>
+                    <div class="profile-text" id="profile-name"></div>
+                    <div class="profile-text" id="profile-story"></div>
                 </div>
-                <div class="profile-text" id="profile-title"></div>
-                <div class="profile-text" id="profile-name"></div>
-                <div class="profile-text" id="profile-story"></div>
             </div>
+            <div class="triangle-right" id="right"></div>
         </div>
-        <div class="triangle-right" id="right"></div>
-    </div>
-    <script src="/js/stories.js"></script>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="stories.html">Stories</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>theScore</h4>
-                    <div class="social-links">
-                        <a href="https://facebook.com/theScore" target="_blank"><i
-                                class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/theScore?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                            target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/thescore/" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/channel/UCatlyoGLwmdnidMJZTJnSbg" target="blank"><i
-                                class="fa-brands fa-youtube"></i></a>
-                        <a href="https://www.tiktok.com/@thescore?lang=en" target="_blank"><i
-                                class="fa-brands fa-tiktok"></i></a>
+        <script src="/js/stories.js"></script>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="stories.html">Stories</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="footer-col">
-                    <h4>theScore Bet</h4>
-                    <div class="social-links">
-                        <a href="https://twitter.com/theScoreBet?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                            target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/thescorebet/" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
+                    <div class="footer-col">
+                        <h4>theScore</h4>
+                        <div class="social-links">
+                            <a href="https://facebook.com/theScore" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/theScore?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                                target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/thescore/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCatlyoGLwmdnidMJZTJnSbg" target="blank"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.tiktok.com/@thescore?lang=en" target="_blank"><i
+                                    class="fa-brands fa-tiktok"></i></a>
+                        </div>
                     </div>
-                </div>
-                <div class="footer-col">
-                    <h4>theScore eSports</h4>
-                    <div class="social-links">
-                        <a href="https://facebook.com/theScoreesports" target="_blank"><i
-                                class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/theScoreesports?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                            target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/thescoreesports/" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/channel/UCSCoziKHqjqbox3Fv3Pb4BA" target="blank"><i
-                                class="fa-brands fa-youtube"></i></a>
-                        <a href="https://www.tiktok.com/@thescoreesports?lang=en" target="_blank"><i
-                                class="fa-brands fa-tiktok"></i></a>
+                    <div class="footer-col">
+                        <h4>theScore Bet</h4>
+                        <div class="social-links">
+                            <a href="https://twitter.com/theScoreBet?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                                target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/thescorebet/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>theScore eSports</h4>
+                        <div class="social-links">
+                            <a href="https://facebook.com/theScoreesports" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/theScoreesports?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                                target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/thescoreesports/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCSCoziKHqjqbox3Fv3Pb4BA" target="blank"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.tiktok.com/@thescoreesports?lang=en" target="_blank"><i
+                                    class="fa-brands fa-tiktok"></i></a>
 
+                        </div>
                     </div>
                 </div>
+                <div class="copyright">
+                    <p>&copy: Copyright 2022 theScore Stories</p>
+                </div>
             </div>
-            <div class="copyright">
-                <p>&copy: Copyright 2022 theScore Stories</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    <script src ="js/index.js"></script>
 </body>
 
 
