@@ -132,13 +132,6 @@ input[type="radio"] {
   padding: 5px 0px 5px 0px;
 }
 
-@media (max-width: 750px) {
-  .story {
-    height: 1000px;
-    width: 100%;
-  }
-}
-
 .about-stories {
   min-height: 100vh;
   width: 100%;
@@ -156,6 +149,7 @@ input[type="radio"] {
   display: flex;
   margin: auto;
   background-color: #f9f6ee;
+  justify-content: center;
 }
 
 .triangle-left {
@@ -173,4 +167,21 @@ input[type="radio"] {
   border-left: 100px solid #fccc04;
   border-bottom: 50px solid transparent;
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.367));
+}
+.profiles{
+  width: 55%;
+}
+.profile-text{
+  width: 55%;
+  margin: auto;
+}
+
+@media (max-width: 750px) {
+  .story {
+    height: 1000px;
+    width: 100%;
+  }
+  .profiles{
+    width: 100%;
+  }
 }
