@@ -184,4 +184,13 @@ input[type="radio"] {
   .profiles{
     width: 100%;
   }
+  .card-name {
+    font-size: 14px;
+  }
+  .about-stories {
+    font-size:6px;
+  }
+  .card {
+    font-size: 14px;
+  }
 }
