@@ -31,7 +31,10 @@
   position: relative;
 }
 
-.about-title, .gallery-title, .main-title, .stories-title {
+.about-title,
+.gallery-title,
+.main-title,
+.stories-title {
   font-size: 48px;
   color: #fff;
   position: relative;
@@ -50,7 +53,9 @@
   position: relative;
 }
 
-.text-box-gallery, .text-box-stories, .text-box-about > h1 {
+.text-box-gallery,
+.text-box-stories,
+.text-box-about > h1 {
   font-size: 40px;
   width: 90%;
   color: #ffffff;
@@ -403,4 +408,11 @@ ul {
     width: 25%;
     margin-bottom: 30px;
   }
+}
+
+.carousel {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
