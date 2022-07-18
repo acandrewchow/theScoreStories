@@ -19,7 +19,7 @@
       rgba(21, 30, 65, 0.7),
       rgba(21, 30, 36, 0.7)
     ),
-    url(/images/header_pics/stadium.jpg);
+    url('../images/header_pics/stadium.jpg');
   background-position: center;
   background-size: cover;
   position: relative;
@@ -32,7 +32,7 @@
       rgba(21, 30, 65, 0.7),
       rgba(21, 30, 36, 0.7)
     ),
-    url(../images/office_pics/theScore_office_1.jpg);
+    url('../images/office_pics/theScore_office_1.jpg');
   background-position: center;
   background-size: cover;
   position: relative;
