@@ -76,7 +76,7 @@
 
 .text-box-gallery,
 .text-box-stories,
-.text-box-about > h1 {
+.text-box-about {
   font-size: 40px;
   width: 90%;
   color: #ffffff;
@@ -246,9 +246,10 @@ nav .fa {
   margin: auto;
   text-align: center;
   padding-top: 20px;
+  padding-bottom: 40px;
 }
 
-/*----- Not needed
+
 .what-title {
   font-size: 36px;
   font-weight: 600;
@@ -256,8 +257,9 @@ nav .fa {
   border-bottom: 4px solid #fccc04;
   width: fit-content;
   margin: 0 auto;
+  padding-top: 30px;
 }
------*/
+
 
 .what-row {
   margin-top: 2%;
@@ -267,7 +269,7 @@ nav .fa {
 
 .what-column {
   flex-basis: 31%;
-  background: #fff3f3;
+  background: #eeecec;
   border-radius: 20px;
   margin-bottom: 2%;
   padding: 20px 12px;
