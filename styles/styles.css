@@ -206,8 +206,6 @@ nav .fa {
   }
 }
 
-/*----- What's the score  -----*/
-
 .container-what {
   animation: change 20s ease-in-out infinite;
   background: linear-gradient(
@@ -218,6 +216,8 @@ nav .fa {
     #0a4f9f,
     #0a4fa0
   );
+  font-size: 18px;
+  font-weight: 250;
 }
 .what {
   width: 80%;
@@ -272,7 +272,7 @@ nav .fa {
 .pic-column {
   float: left;
   width: 33.33%;
-  padding: 7.5px;
+  padding: 5px;
 }
 
 .footer {
